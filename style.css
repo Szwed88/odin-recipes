@@ -30,21 +30,29 @@ width: 400px;
 list-style-type: square;
 }
 .container{
-  display: flex;
-  height: 300px;
-  width: 70%;
-  flex: 1;
   padding-left: 1em;
+  border: solid black 2px;
+  border-radius: 8px;
+
+}
+.container-2{
+  padding-left: 1em;
+  border: solid black 2px;
+  border-radius: 8px;
+  
+}
+
+.container-3{
+  padding-left: 1em;
+  border: solid black 2px;
+  border-radius: 8px;
+  
 }
 .container,div,h1{
   margin-top: 15px;
 }
 .container,div,p{
   margin-top: 15px;
-}
-img{
-    width: 200px;
-    height: 350px;
 }
  a:link, a:visited {
     
@@ -53,15 +61,17 @@ img{
 
  }
  a:hover, a:active{
-    color:red;
+    color:white;
     background-color: black;
  }
 body{
-    background-position: right top;
+    
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    margin-right: 360px;
+    background-position: right top 5%;
+    /*background-position:right top;*/
+    margin-right: 500px;
     background-attachment: fixed;
     margin-left: 20px;
     list-style-position: inside;
+    background-color: #fcfafc;
 }
