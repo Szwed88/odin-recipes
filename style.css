@@ -53,12 +53,11 @@ padding: 10px 20px;
     font-size: 18px;
     color:#fff;
 }
-a:link{
+a:link, a:visited {
     text-decoration: none;
+    color: #fff;
 }
-a:visited{
-    color:#fff;
-}
+
 a:hover{
     color:#9be7ab;
     font-size: 22px;
