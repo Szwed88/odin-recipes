@@ -7,71 +7,234 @@
 *::after{
 box-sizing: border-box;
 }
-
-
-#title{
-    margin: auto;
-    font-family: 'Courier New', Courier, monospace;
-    width: 400px;
-    font-size: 3em;
-    padding: 20px 10px;
-    border: solid black 2px;
-    border-radius: 8px;
-}
-#product-list{
-margin: 1em;
-padding: 1em;
-width: 3em;
-border: solid black 2px;
-border-radius: 8px;
-font-family: monospace;
-font-size: 1.5em;
-width: 400px;
-list-style-type: square;
-}
-.container{
-  padding-left: 1em;
-  border: solid black 2px;
-  border-radius: 8px;
-
-}
-.container-2{
-  padding-left: 1em;
-  border: solid black 2px;
-  border-radius: 8px;
-  
-}
-
-.container-3{
-  padding-left: 1em;
-  border: solid black 2px;
-  border-radius: 8px;
-  
-}
-.container,div,h1{
-  margin-top: 15px;
-}
-.container,div,p{
-  margin-top: 15px;
-}
- a:link, a:visited {
-    
-    color: black;
-    text-align: center;
-
- }
- a:hover, a:active{
-    color:white;
-    background-color: black;
- }
 body{
+  /*font-family: "Roboto", sans-serif;
+    font-family: monospace;*/
+
+}
+
+/*NAV-BAR*/
+
+.nav-bar { 
+display: flex;
+flex-direction: row; 
+align-items: center;
+justify-content: space-between;
+background-color: #000000;
+padding: 10px 20px;
+/*font-family: "MedievalSharp", cursive;*/
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+/*border: solid white 1px;*/
+}
+.nav-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  font-size: 26px;
+}
+.logo{
     
-    background-repeat: no-repeat;
-    background-position: right top 5%;
-    /*background-position:right top;*/
-    margin-right: 500px;
-    background-attachment: fixed;
-    margin-left: 20px;
-    list-style-position: inside;
-    background-color: #fcfafc;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    background-image:url("images/Odin-2.png");
+    background-position: center;
+    background-size: cover;
+}
+.links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 25px;
+    font-size: 18px;
+    color:#fff;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color:#fff;
+}
+a:hover{
+    color:#9be7ab;
+    font-size: 22px;
+}
+.title {
+  align-items: center;
+  font-size: 30px;
+  /*font-family: "MedievalSharp", cursive;*/
+  padding: 15px 0;
+
+}
+    /*MAIN BOX*/
+
+    .main-box{
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding: 40px 100px;
+  /*font-family: "Quicksand", sans-serif;*/
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+/*INDEX.HTML*/
+
+.box-home{
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  align-content: center;
+  padding: 50px 0;
+  flex: 1;
+  gap:20px;
+  /*border-bottom: 2px solid black;*/
+}
+
+.home-img{
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  background-image: url("images/Odin-big.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* border: solid black 1px; */
+}
+
+
+.box-text{
+  padding-top: 50px;
+  margin: 0 100px;
+  
+  
+ 
+}
+
+/*SUB-PAGES*/
+  .box-subpage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding: 50px 0;
+  
+  }
+
+
+  .box-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*border-bottom: 2px solid black;*/
+  }
+
+.box{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: nowrap;
+  padding-top: 15px;
+  gap:30px;
+  /*border: solid black 1px;*/
+}
+
+.box-title{
+  font-size: 25px;
+font-weight: 600;
+  text-align: center;
+  padding-bottom: 10px;
+ 
+}
+.text-title{
+ /* font-family: 'Roboto';*/
+  font-weight: 600;
+  padding: 20 0px;
+}
+.text-name{
+font-size: 25px;
+font-weight: 600;
+padding-bottom: 20px;
+}
+                    /*IMAGES SUBPAGE*/
+
+.lasagna-img{
+  width: 400px;
+  height: 300px;
+  background-image: url("images/lasagna.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*border: solid black 1px;*/
+
+}
+.bread-img{
+  width: 400px;
+  height: 300px;
+  background-image: url("images/bread.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*border: solid black 1px;*/
+
+}
+.ice-cream-img{
+  width: 400px;
+  height: 300px;
+  background-image: url("images/ice_cream.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*border: solid black 1px;*/
+
+}
+
+/*LIST ITEMS*/
+
+.u-list{
+ /* list-style: none;*/
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  text-align:justify;
+  gap:10px;
+  /*border: solid black 1px;*/
+  list-style-position: inside;
+  padding-bottom: 20px;
+}
+.o-list{
+ /*list-style: none;*/
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  text-align:justify;
+  gap:10px;
+  /*border: solid black 1px;*/
+  list-style-position: inside;
+  padding-bottom: 20px;
+}
+.o-list li{
+  margin-left: 20px;
+}
+.u-list li{
+  margin-left: 20px;
+}
+
+
+
+
+
+
+    /*FOOTER*/
+
+.footer{
+    color: #fff;
+    background-color: rgb(56, 54, 54);
+    font-size: 10px;
+    text-align: center;
+    padding: 20px;
 }
