@@ -49,6 +49,7 @@ padding: 5px 10px;
     color: #fff;
     padding: 5px;
 }
+<<<<<<< HEAD
 
 .links a {
     text-decoration: none;
@@ -71,6 +72,16 @@ padding: 5px 10px;
     height: 2px;
     background-color: #9be7ab;
     transition: width 0.2s ease;
+=======
+a:link, a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    color:#9be7ab;
+    font-size: 22px;
+>>>>>>> 51eb55b2ae370fed592db4ceb24b3454af76e873
 }
 
 .links a:hover::after {
@@ -254,8 +265,12 @@ padding-bottom: 20px;
     font-size: 10px;
     text-align: center;
     padding: 20px;
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
     align-items: center;
   
 }
+=======
+}
+>>>>>>> 51eb55b2ae370fed592db4ceb24b3454af76e873
